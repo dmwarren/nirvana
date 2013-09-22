@@ -19,14 +19,16 @@ Requirements
 Usage
 --
 
+- Follow the usual procedures for a fresh ZenPhoto 1.4.x installation.
+
 - Edit the database and filesystem paths in _nirvana.py_.
 
-- Add the line below to your zenphoto.cfg file unless you want ZenPhoto to corrupt all database fields containing Unicode characters.
+- Add the line below to your zenphoto.cfg file. (Skip this step and you risk causing ZenPhoto to corrupt all database fields containing Unicode characters.)
  ```
 define ('FILESYSTEM_CHARSET', 'UTF-8');
  ```
 
-- Run nirvana.py migrate.
+- Run `nirvana.py migrate`.
 
 - Wait.
 
