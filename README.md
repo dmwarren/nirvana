@@ -79,7 +79,7 @@ Limitations
 
 - Characters like quotation marks are filtered out by ZenPhoto's sanitize_path().
 
-If you have any `sanizite_path()`-ed characters in your filenames, you will end up with broken images and albums. Running _nirvana migrate-verbose_ will show you the offending file or album name so you can change them in Gallery 3 before attempting migration again.
+ - If you have any `sanizite_path()`-ed characters in your filenames, you will end up with broken images and albums. Running _nirvana migrate-verbose_ will show you the offending file or album name so you can change them in Gallery 3 before attempting migration again.
 
 - Does not care about Windows servers. Maybe you shouldn't either.
 
