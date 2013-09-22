@@ -26,12 +26,11 @@ Usage
 define ('FILESYSTEM_CHARSET', 'UTF-8');
  ```
 
-- Run nirvana.py migrate
-   Run migration and show item ID numbers as they are migrated.
+- Run nirvana.py migrate.
 
 - Wait.
 
-**Warning**: Don't access ZenPhoto with a browser or any other user agent while this script is running.  If ZenPhoto wakes up during this surgery it will see inconsistencies between the filesystem and database and attempt to reconcile the two, rendering your ZenPhoto database useless.
+**Warning**: Don't access ZenPhoto with a browser or any other user agent during migration. If you do, ZenPhoto will attempt to reconcile the inconsistent filesystem state with the inconsistent database state, and you'll have to start from scratch.
 
 
 
