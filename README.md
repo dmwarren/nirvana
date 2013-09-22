@@ -66,13 +66,13 @@ Limitations
 
 - Only works with a fresh, empty ZenPhoto installations.
 
-- Does build thumbnail caches for you. Your first ZenPhoto accesses are what warm up the cache.  Breathe deeply.
+- Does not build thumbnail caches for you. Your first ZenPhoto accesses are what warm up the cache.  Patience is a virtue.
 
 - Brittle. We're talking directly to the database and filesystem. If there were clean APIs you wouldn't need this kind of crap.
 
-- Sets preferred album thumbnails only when the thumbnail is contained at the root level of the album. (i.e., Album X and sub-album Y--album X's album cover thumbnail can't be from album Y.)
+- Only sets album thumbnails only when the source item lives at the root of the album. (i.e., if you have Album X and sub-album Y, album X's album cover thumbnail can't be from album Y.)
 
-- You might need to do a few delete/restore/migrate cycles and some manual massaging before you're happy with the results of this script. I wrote most of this in a day. Don't expect much.
+- Unicode brittleness. You might need to do a few delete/restore/migrate cycles and some manual massaging before you succeed.  See **Troubleshooting**.
 
 - Does not respect or migrate Gallery 3 permissions.
 
@@ -84,7 +84,7 @@ Limitations
 
 - Does not care about Windows servers. Maybe you shouldn't either.
 
-- Written in very naive Python. Left joins? Tuples? What are those?
+- Written in very naive Python and SQL. Left joins? Tuples? What are those?
 
 
 
